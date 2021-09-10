@@ -8,22 +8,22 @@ import Todo from "./Components/Todo";
 
 
 //States : Du lieu noi tai cua Component
-const TODO_APP_STORAGE_KEY = 'TODO_APP';
+// const TODO_APP_STORAGE_KEY = 'TODO_APP';
 
 function App() {
   const [todoList, setTodoList] = useState([]);//tra ve Array
   const [textInput, setTextInput] = useState("");//tra ve Array
 
-useEffect(() =>{
-  const storage = localStorage.getItem(TODO_APP_STORAGE_KEY);
-if(storage){
-setTodoList(JSON.parse(storage));
-}
-},[]);
+// useEffect(() =>{
+//   const storage = localStorage.getItem(TODO_APP_STORAGE_KEY);
+// if(storage){
+// setTodoList(JSON.parse(storage));
+// }
+// },[]);
 
- useEffect(() => {
- localStorage.setItem(TODO_APP_STORAGE_KEY,JSON.stringify(todoList));
- },[todoList]);
+//  useEffect(() => {
+//  localStorage.setItem(TODO_APP_STORAGE_KEY,JSON.stringify(todoList));
+//  },[todoList]);
 
 
 
